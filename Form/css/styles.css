@@ -1,0 +1,110 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: helvetica;
+}
+
+body {
+    background-color: #dbdce9ea 
+}
+
+h1,
+h2,
+h3 {
+    color: #333
+}
+
+
+p,
+label {
+    color: #444;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 5px 0;
+}
+
+input[type=text],
+input[type=number],
+input[type=date],
+input[type=file] {
+    width: 400px;
+}
+
+textarea{
+    padding: 10px 5px;
+}
+
+/* page header */
+.header {
+    height: 160px;
+    padding: 20px;
+    background-color: #673ab7;
+}
+
+header h3 {
+    color: #fff;
+    margin-top: 0;
+}
+
+/* form container */
+.form-container {
+    background-color: #fdfdfd;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    top: -62px;
+}
+
+/* form header */
+.form-header {
+    border-bottom: 1px solid #e6d8d8;
+    height: 45px;
+}
+
+.form-header p {
+    color: #673ab7;
+    border-bottom: 2px solid #673ab7;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    height: 45px;
+    line-height: 45px;
+}
+
+/* form body */
+.form-body {
+    padding: 40px;
+}
+
+.form-title {
+    margin-bottom: 15px;
+}
+
+.form-body p {
+    margin-bottom: 20px;
+}
+
+.required-field {
+    color: red;
+}
+
+.box-input {
+    margin-bottom: 35px; 
+}
+
+.block {
+    display: block;
+}
+
+select {
+    margin-bottom: 20px;
+    display: block;
+}
+
+
+

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Cadastre o seu Celular para Vender mais Rápido!</h3>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <p>Fomulário</p>
+            </div>
+            <div class="form-body">
+                <h2 class="form-title">O que você está anunciando?</h2>
+                <p>Descreva as características e marque os opcionais que ele possui:</p>
+                <form>
+                    <div class="box-input">
+                        <label for="title">Título:<span class="required-field">*</span></label>
+                        <input 
+                         type="text"
+                         name="title" 
+                         id="title" 
+                         class="block"
+                         placeholder="Um título para anunciar seu celular"
+                         required
+                         />
+                    </div>
+                    <div class="box-input">
+                        <label for="price">Preço:<span class="required-field">*</span></label>
+                        <input 
+                         type="number"
+                         name="price" 
+                         id="price" 
+                         class="block"
+                         placeholder="Defina um preço"
+                         required
+                         />
+                    </div>
+                    <div class="box-input">
+                        <label for="description">Descrição:<span class="required-field">*</span></label>
+                        <textarea 
+                          name="description"
+                          id="description"
+                          class="block" 
+                          placeholder="Aqui você descreve em detalhes as condições do aparelho">                          
+                        </textarea>
+                    </div>
+
+                    <div>
+                        <label for="brand">Marca:</label>
+                        <select name="brand">
+                            <option value="selecione">Selecione</option>
+                            <option value="samsung">Samsung</option>
+                            <option value="xiaomi">Xiaomi</option>
+                            <option value="apple">Apple</option>
+                        </select>  
+                    </div>
+
+                    <div>
+                        <label for="condition">Condição:</label>
+                        <select name="condition">
+                            <option value="selecione">Selecione</option>
+                            <option value="novo">Novo</option>
+                            <option value="usado">Usado</option>
+                            <option value="recondicionado">recondicionado</option>
+                            <option value="defeito">Com defeito</option>
+                        </select>  
+                    </div>
+
+                    <div>
+                        <label for="memory">Memória interna:</label>
+                        <select name="memory">
+                            <option value="selecione">Selecione</option>
+                            <option value="512mb">512MB</option>
+                            <option value="1gb">1GB</option>
+                            <option value="2gb">2GB</option>
+                            <option value="4gb">4GB</option>
+                            <option value="8gb">8GB</option>
+                            <option value="16gb">16GB</option>
+                            <option value="32gb">32GB</option>
+                            <option value="64gb">64GB</option>
+                            <option value="128gb">128GB</option>
+                            <option value="256gb">256GB</option>
+                            <option value="512gb">512GB</option>
+                            <option value="1tb">1TB</option>
+                        </select>  
+                    </div>
+
+                    <div>
+                        <label for="color">Cor:</label>
+                        <select name="color">
+                            <option value="selecione">Selecione</option>
+                            <option value="preto">Preto</option>
+                            <option value="prata">Prata</option>
+                            <option value="branco">Branco</option>
+                            <option value="verde">Verde</option>
+                            <option value="amarelo">Amarelo</option>
+                            <option value="vermelho">Vermelho</option>
+                            <option value="rosa">Rosa</option>
+                            <option value="dourado">Dourado</option>
+                            <option value="azul">Azul</option>
+                            <option value="cinza">Cinza</option>
+                            <option value="laranja">Laranja</option>
+                            <option value="roxo">Roxo</option>                       
+                            <option value="bronze">Bronze</option>
+                            <option value="outra">Outra</option>             
+                        </select>  
+                    </div>
+
+                    <div>
+                        <label for="batery">Saúde da bateria:</label>
+                        <select name="batery">
+                            <option value="selecione">Selecione</option>
+                            <option value="perfeita">Perfeita (95% até 100%)</option>
+                            <option value="boa">Boa (80% até 94%)</option>
+                            <option value="ok">Ok (60% até 79%)</option>
+                            <option value="ruim">Ruim (40% até 79%)</option>
+                            <option value="muitoruim">Muito ruim (abaixo de 39%)</option>
+                        </select>  
+                    </div>
+
+                         
+                         <div class="optional-box">
+                            <p>Como você conheceu nosso app?</p>
+                          <ul class="optional-list">
+                            <li>
+                                <input type="checkbox" id="google" name="optional[]" value="google">
+                                <label for="google">Google</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="instagram" name="optional[]" value="instagram">
+                                <label for="instagram">Instagram</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="facebook" name="optional[]" value="facebook">
+                                <label for="facebook">Facebook</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="amigos" name="optional[]" value="amigos">
+                                <label for="amigos">Amigos</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="outros" name="optional[]" value="outros">
+                                <label for="outros">Outros</label>
+                            </li>
+                         </ul>
+                        </div>
+
+                        <div>
+                            <label for="image">Fotos</label>
+                            <p>adicione até 6 fotos</p>
+                            <input type="file" name="image">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
